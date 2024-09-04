@@ -7,16 +7,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+
     <div class="navBar">
+      <div onclick="toggle()" class="mobile-icon">
+        <img src="images/icon.jpg"  alt="">
+      </div>
+
       <div class="imageBox">
         <img src="images/1.jpg" alt="" /><span>Test</span>
         <a href="">Test</a>
       </div>
-      <div>
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Kontakt</a>
+      <div id="navDiv" class="mobileLink-display">
+        <div class="mobileLink">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Kontakt</a>
+        </div>
       </div>
+      
     </div>
 
     <div class="banner">
@@ -95,5 +104,17 @@
   <div class="footer">
     <h3>Frontend</h3>
   </div>
-  </body>
+
+  <script>
+    function toggle() {
+      let x = document.getElementById("navDiv");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+          x.style.display ="none";
+        }
+    }
+  </script>
+</body>
 </html>
+
