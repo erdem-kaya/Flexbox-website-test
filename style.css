@@ -121,3 +121,13 @@ input[type=text]:focus {
 input[text=text]:hover {
   background-color: aqua;
 }
+
+.footer {
+  background-color: chocolate;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+}
